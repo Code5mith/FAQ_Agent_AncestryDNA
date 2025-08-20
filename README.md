@@ -1,13 +1,16 @@
 # **AncestryDNA FAQ Agent**
 
+
+https://github.com/user-attachments/assets/0e772304-d4ef-448f-afa9-68089868dfb4
+
+
 This project is a question-answering agent built using **Langflow** that provides detailed responses to frequently asked questions about AncestryDNA's services. The agent is powered by an extensive knowledge base derived directly from the official AncestryDNA FAQ.
 
 ## **Features**
 
 * **FAQ Agent:** A single, focused agent designed to accurately answer questions based on a specific knowledge source.  
-* **Knowledge Base:** The agent's knowledge is sourced from a comprehensive collection of AncestryDNA's publicly available Frequently Asked Questions.  
+* **Knowledge Base / RAG:** The agent's knowledge is Vector Database populated with AncestryDNA's publicly available Frequently Asked Questions.  
 * **Langflow Integration:** The entire project is constructed as a Langflow chart, allowing for a visual, no-code/low-code approach to building and managing the agent's logic.  
-* **Scalable:** The Langflow architecture makes it easy to add more data sources, tools, or functionalities in the future.
 
 ## **Flow Overview**
 
@@ -22,3 +25,9 @@ The Langflow chart for this project is designed for simplicity and efficiency. T
 * An **LLM** llama 3.2 that acts as the agent's reasoning engine.
 
 The agent takes a user's question, performs a vector search against the FAQ knowledge base, and synthesizes a relevant answer.
+
+```
+# To Ensure Relevent Response it is recommended to include sentences like :
+    ## Based on the data you have
+    ## AncestryDNA, the name of the company
+```
