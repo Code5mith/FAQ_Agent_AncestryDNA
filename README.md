@@ -25,3 +25,9 @@ The Langflow chart for this project is designed for simplicity and efficiency. T
 * An **LLM** llama 3.2 that acts as the agent's reasoning engine.
 
 The agent takes a user's question, performs a vector search against the FAQ knowledge base, and synthesizes a relevant answer.
+
+```
+# To Ensure Relevent Response it is recommended to include sentences like :
+    ## Based on the data you have
+    ## AncestryDNA, the name of the company
+```
